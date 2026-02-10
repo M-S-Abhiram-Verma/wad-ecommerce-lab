@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Home</title>
+    <style>
+
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+       /* Header Styles */
+        header {
+            background-color: cadetblue;
+            padding: 20px 0; /* Add padding for top and bottom */
+            text-align: center;
+            color: white;
+            width: 100%; /* Ensure the header takes the full width of the page */
+            position: relative; /* To position the login and sign-up links properly */
+        }
+
+        /* Ensure header text is centered */
+        header h1 {
+            font-size: 52px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 19px;
+            margin-top: 10px;
+        }
+
+        /* Login and Sign Up Section */
+        header div {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        /* Add some general styling for the login and signup links */
+        a {
+            text-decoration: underline;
+            color: white;
+            font-size: 18px;
+        }
+
+
+        /* Navigation Bar Styles */
+        nav {
+            font-size: 18px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #20b2aa;
+            color: white;
+        }
+
+        /* Welcome Section Styles */
+        .Hello {
+            background:url("ShopEase.png") no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: black;
+        }
+
+        .Hello h2 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .Hello p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        /* Featured Products Section Styles */
+        section {
+            text-align: center;
+            padding: 50px 10%;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Product Styles - Keep them same size */
+        .product {
+            display: inline-block;
+            width: 200px;
+            height: 350px; /* Set a fixed height to maintain uniformity */
+            margin: 0 15px 30px;
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            vertical-align: top; /* Ensures proper alignment */
+            box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+        }
+
+        /* Hover Effect */
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Product Image */
+        .product img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures the image fills the space without distortion */
+            border-radius: 8px;
+        }
+
+        /* Product Description */
+        .product p {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: cadetblue;
+            text-align: center;
+            padding: 15px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+    <script src="dynamic.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Shop<span style="color: coral;">Ease</span></h1>
+        <p>Your One-Stop Online Store</p>
+        <!-- Login and Sign Up Section -->
+        <div style="position: absolute; top: 20px; right: 20px; display: flex; gap: 15px;">
+            <a href="login.html" style="text-decoration: underline; color: white; font-size: 18px;">Login</a>
+            <a href="signup.html" style="text-decoration: underline; color: white; font-size: 18px;">Sign Up</a>
+        </div>
+    </header>
+    
+    
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="Hello">
+        <div>
+            <h2>Welcome to Shop<span style="color: coral;">Ease</span>!</h2>
+            <p>Discover the best products at unbeatable prices.</p>
+        </div>
+    </div> 
+
+    <section>
+        <h2>Our Featured Products</h2>
+        <div class="product">
+            <img src="Headphones.jpg" alt="Wireless Headphones">
+            <p>Wireless Headphones - 59.99/-</p>
+        </div>
+        <div class="product">
+            <img src="Smartwatch.jpg" alt="Smartwatch">
+            <p>Smartwatch - 129.99/-</p>
+        </div>
+        <div class="product">
+            <img src="Bluetooth Speaker.jpg" alt="Bluetooth Speaker">
+            <p>Bluetooth Speaker - 79.99/-</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ShopEase. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ShopEase</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Form Styles */
+        .signup-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .signup-container input, .signup-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .signup-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: cadetblue;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Success Message Styles */
+        .success-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+
+        .success-message a {
+            text-decoration: none;
+            color: cadetblue;
+            font-weight: bold;
+        }
+
+        /* Error Message Styles */
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            display: none;
+        }
+    </style>
+    <script src="dynamic.js"></script>
+
+</head>
+<body>
+
+    <!-- Sign Up Form -->
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <p class="error-message" id="emailError">Invalid email address!</p>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            <p class="error-message" id="passwordError">Passwords do not match!</p>
+            <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required>
+            <p class="error-message" id="mobileError">Mobile number must contain exactly 10 digits!</p>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage">
+            <p>Your account has been created successfully!</p>
+            <p><a href="login.html">Go to Login Page</a></p>
+        </div>
+    </div>
+
+    <script src="sinup.js"></script>
+
+
+</body>
+</html>

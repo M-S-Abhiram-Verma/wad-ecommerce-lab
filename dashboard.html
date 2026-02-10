@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ShopEase</title>
+    <style>
+        /* Ensure body and html take full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container for the dashboard */
+        .dashboard-container {
+            width: 320px;  /* Set fixed width */
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+
+        .profile-info {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .profile-info p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .action-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: cadetblue;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background-color: #20b2aa;
+        }
+
+        .logout-btn {
+            background-color: #ff6347;  /* Red color for logout */
+        }
+
+        .logout-btn:hover {
+            background-color: #e04e3c;
+        }
+
+        .redirect a {
+            text-decoration: none;
+            color: cadetblue;
+            font-size: 14px;
+        }
+
+        .redirect a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Welcome Title -->
+        <h1 class="welcome-title">
+            Welcome to Shop<span style="color: coral;">Ease</span>!
+        </h1>
+
+        <!-- Welcome Amit message -->
+        <p>Welcome, Amit!</p>
+
+        <!-- Profile Info -->
+        <div class="profile-info">
+            <p><strong>Name:</strong> Amit</p>
+            <p><strong>City:</strong> Hyderabad</p>
+            <p><strong>Country:</strong> India</p>
+        </div>
+
+        <!-- Browse Products Button -->
+        <a href="products.html">
+            <button class="action-btn">Browse Products</button>
+        </a>
+
+        <!-- Logout Button -->
+        <a href="index.html">
+            <button class="action-btn logout-btn">Logout</button>
+        </a>
+
+    </div>
+
+</body>
+</html>
